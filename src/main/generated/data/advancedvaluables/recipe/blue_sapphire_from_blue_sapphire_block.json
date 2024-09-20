@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blue_sapphire",
+  "ingredients": [
+    {
+      "item": "advancedvaluables:blue_sapphire_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "advancedvaluables:blue_sapphire"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "green_sapphire",
+  "ingredients": [
+    {
+      "item": "advancedvaluables:green_sapphire_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "advancedvaluables:green_sapphire"
+  }
+}

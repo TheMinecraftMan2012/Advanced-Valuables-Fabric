@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pink_garnet_tools",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:pink_garnet"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " a ",
+    " a ",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:pink_garnet_sword"
+  }
+}

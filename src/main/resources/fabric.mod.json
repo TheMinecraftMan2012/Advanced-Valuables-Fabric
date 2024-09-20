@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "advancedvaluables",
+	"version": "${version}",
+	"name": "Advanced Valuables",
+	"description": "This Mod adds different types of Valuables!",
+	"authors": [
+		"TheMinecraftMan"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/advanced-valuables",
+		"issues": "https://forms.gle/vmNizvaCav4BfHdB6"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/advancedvaluables/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.theminecraftman.advancedvaluables.AdvancedValuables"
+		],
+		"fabric-datagen": [
+			"net.theminecraftman.advancedvaluables.AV_DataGen.AdvancedValuables_DataGenerators"
+		],
+		"client": ["net.theminecraftman.advancedvaluables.AV_Client.AdvancedValuables_Client"]
+	},
+	"mixins": [
+		"advancedvaluables.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

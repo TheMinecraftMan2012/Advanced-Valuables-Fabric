@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_sapphire_tools",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:blue_sapphire"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "aa ",
+    "ab ",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:blue_sapphire_axe"
+  }
+}

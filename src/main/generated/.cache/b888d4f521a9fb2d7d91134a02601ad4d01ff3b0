@@ -1,0 +1,4 @@
+// 1.21.1	2024-09-19T21:55:19.8495397	Advanced Valuables/Tags for minecraft:block
+a2d2a2cb071216f8a696a919ff5785e1194938ea data\minecraft\tags\block\needs_iron_tool.json
+3b1b69583d40559777c7626a01d4f8879ecd86ea data\minecraft\tags\block\needs_diamond_tool.json
+f45e8a2eaed93939ec5009681f8e7e848c2a0d07 data\minecraft\tags\block\mineable\pickaxe.json
