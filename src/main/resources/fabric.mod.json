@@ -11,7 +11,7 @@
 		"homepage": "https://modrinth.com/mod/advanced-valuables",
 		"issues": "https://forms.gle/vmNizvaCav4BfHdB6"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/advancedvaluables/icon.png",
 	"environment": "*",
 	"entrypoints": {
