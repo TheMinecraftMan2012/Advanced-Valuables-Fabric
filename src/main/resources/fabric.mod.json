@@ -9,6 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/mod/advanced-valuables",
+		"sources": "https://github.com/TheMinecraftMan2012/Advanced-Valuables.git",
 		"issues": "https://forms.gle/vmNizvaCav4BfHdB6"
 	},
 	"license": "MIT",
