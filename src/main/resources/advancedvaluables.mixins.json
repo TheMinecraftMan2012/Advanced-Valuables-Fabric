@@ -2,10 +2,6 @@
 	"required": true,
 	"package": "net.theminecraftman.advancedvaluables.AV_Mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "AdvancedValuables_Mixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+	"mixins": ["AdvancedValuables_Mixin"],
+	"injectors": { "defaultRequire": 1 }
 }
