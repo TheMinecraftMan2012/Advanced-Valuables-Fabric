@@ -1,4 +1,4 @@
-package net.theminecraftman.advancedvaluables.AV_ToolComponents.ToolTiers;
+package net.theminecraftman.advancedvaluables.AV_ToolComponents;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;

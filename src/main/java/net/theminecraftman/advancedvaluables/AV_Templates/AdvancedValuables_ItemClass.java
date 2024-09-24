@@ -3,8 +3,10 @@ package net.theminecraftman.advancedvaluables.AV_Templates;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.theminecraftman.advancedvaluables.AV_ToolComponents.ToolTiers.AdvancedValuables_ToolsMaterials;
+import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ArmorMaterials;
+import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ToolsMaterials;
 import net.theminecraftman.advancedvaluables.AdvancedValuables;
 
 public class AdvancedValuables_ItemClass
@@ -104,6 +106,151 @@ public class AdvancedValuables_ItemClass
     public static final Item FUSION_SWORD = registerFireResistantSwordItem("fusion_sword", AdvancedValuables_ToolsMaterials.FUSION_GEM);
 
     public static final Item RUBY_SWORD = registerSwordItem("ruby_sword", AdvancedValuables_ToolsMaterials.RUBY);
+
+    public static final Item RED_SAPPHIRE_HELMET = registerItem("red_sapphire_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_SAPPHIRE, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item RED_SAPPHIRE_CHESTPLATE = registerItem("red_sapphire_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_SAPPHIRE, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item RED_SAPPHIRE_LEGGINGS = registerItem("red_sapphire_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_SAPPHIRE, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item RED_SAPPHIRE_BOOTS = registerItem("red_sapphire_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_SAPPHIRE, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item BLUE_SAPPHIRE_HELMET = registerItem("blue_sapphire_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_SAPPHIRE, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item BLUE_SAPPHIRE_CHESTPLATE = registerItem("blue_sapphire_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_SAPPHIRE, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item BLUE_SAPPHIRE_LEGGINGS = registerItem("blue_sapphire_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_SAPPHIRE, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item BLUE_SAPPHIRE_BOOTS = registerItem("blue_sapphire_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_SAPPHIRE, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item GREEN_SAPPHIRE_HELMET = registerItem("green_sapphire_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.GREEN_SAPPHIRE, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+
+    public static final Item GREEN_SAPPHIRE_CHESTPLATE = registerItem("green_sapphire_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.GREEN_SAPPHIRE, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+
+    public static final Item GREEN_SAPPHIRE_LEGGINGS = registerItem("green_sapphire_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.GREEN_SAPPHIRE, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+
+    public static final Item GREEN_SAPPHIRE_BOOTS = registerItem("green_sapphire_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.GREEN_SAPPHIRE, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
+
+    public static final Item RED_GARNET_HELMET = registerItem("red_garnet_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_GARNET, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+
+    public static final Item RED_GARNET_CHESTPLATE = registerItem("red_garnet_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_GARNET, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+
+    public static final Item RED_GARNET_LEGGINGS = registerItem("red_garnet_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_GARNET, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+
+    public static final Item RED_GARNET_BOOTS = registerItem("red_garnet_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RED_GARNET, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
+    public static final Item BLUE_GARNET_HELMET = registerItem("blue_garnet_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_GARNET, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+
+    public static final Item BLUE_GARNET_CHESTPLATE = registerItem("blue_garnet_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_GARNET, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+
+    public static final Item BLUE_GARNET_LEGGINGS = registerItem("blue_garnet_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_GARNET, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+
+    public static final Item BLUE_GARNET_BOOTS = registerItem("blue_garnet_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.BLUE_GARNET, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.PINK_GARNET, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.PINK_GARNET, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.PINK_GARNET, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.PINK_GARNET, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
+    public static final Item YELLOW_GARNET_HELMET = registerItem("yellow_garnet_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.YELLOW_GARNET, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+
+    public static final Item YELLOW_GARNET_CHESTPLATE = registerItem("yellow_garnet_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.YELLOW_GARNET, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+
+    public static final Item YELLOW_GARNET_LEGGINGS = registerItem("yellow_garnet_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.YELLOW_GARNET, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+
+    public static final Item YELLOW_GARNET_BOOTS = registerItem("yellow_garnet_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.YELLOW_GARNET, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
+    public static final Item FUSION_HELMET = registerItem("fusion_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
+
+    public static final Item FUSION_CHESTPLATE = registerItem("fusion_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50))));
+
+    public static final Item FUSION_LEGGINGS = registerItem("fusion_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50))));
+
+    public static final Item FUSION_BOOTS = registerItem("fusion_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50))));
+
+    public static final Item RUBY_HELMET = registerItem("ruby_helmet",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+
+    public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+
+    public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+
+    public static final Item RUBY_BOOTS = registerItem("ruby_boots",
+            new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(AdvancedValuables.MOD_ID, name), item);

@@ -145,5 +145,51 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_HOE, Models.HANDHELD);
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_SWORD, Models.HANDHELD);
+
+        // -- Armors -- //
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_HELMET, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_BOOTS, Models.GENERATED);
     }
 }

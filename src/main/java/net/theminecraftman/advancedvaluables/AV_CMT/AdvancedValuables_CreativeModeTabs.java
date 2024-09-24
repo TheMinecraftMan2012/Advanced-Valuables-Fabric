@@ -144,6 +144,51 @@ public class AdvancedValuables_CreativeModeTabs
                 entries.add(AdvancedValuables_ItemClass.RUBY_SHOVEL);
                 entries.add(AdvancedValuables_ItemClass.RUBY_HOE);
                 entries.add(AdvancedValuables_ItemClass.RUBY_SWORD);
+
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_HELMET);
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HELMET);
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HELMET);
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_HELMET);
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_HELMET);
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_HELMET);
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_HELMET);
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.FUSION_HELMET);
+                entries.add(AdvancedValuables_ItemClass.FUSION_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.FUSION_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.FUSION_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.RUBY_HELMET);
+                entries.add(AdvancedValuables_ItemClass.RUBY_CHESTPLATE);
+                entries.add(AdvancedValuables_ItemClass.RUBY_LEGGINGS);
+                entries.add(AdvancedValuables_ItemClass.RUBY_BOOTS);
             })).build());
 
     private static ItemGroup registerCreativeTabs(String name, ItemGroup itemGroup)
