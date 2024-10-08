@@ -191,6 +191,24 @@ public class AdvancedValuables_CreativeModeTabs
                 entries.add(AdvancedValuables_ItemClass.RUBY_BOOTS);
             })).build());
 
+    public static final ItemGroup AV_FOODS_TAB = registerCreativeTabs("foods", FabricItemGroup.builder()
+            .icon(() -> new ItemStack(AdvancedValuables_ItemClass.FUSION_APPLE))
+            .displayName(Text.translatable("creativetab.advancedvaluables.foods"))
+            .entries((displayContext, entries) -> {
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_APPLE);
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_APPLE);
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_APPLE);
+
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_APPLE);
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_APPLE);
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_APPLE);
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_APPLE);
+
+                entries.add(AdvancedValuables_ItemClass.FUSION_APPLE);
+                entries.add(AdvancedValuables_ItemClass.RUBY_APPLE);
+            })
+            .build());
+
     private static ItemGroup registerCreativeTabs(String name, ItemGroup itemGroup)
     {
         return Registry.register(Registries.ITEM_GROUP, Identifier.of(AdvancedValuables.MOD_ID, name), itemGroup);

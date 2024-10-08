@@ -191,5 +191,18 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_BOOTS, Models.GENERATED);
+
+        // -- Foods -- //
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_APPLE, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_APPLE, Models.GENERATED);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_APPLE, Models.GENERATED);
     }
 }

@@ -5,6 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.theminecraftman.advancedvaluables.AV_Templates.FoodComponents.AdvancedValuables_FoodProperties;
 import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ArmorMaterials;
 import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ToolsMaterials;
 import net.theminecraftman.advancedvaluables.AdvancedValuables;
@@ -250,6 +251,19 @@ public class AdvancedValuables_ItemClass
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.BOOTS,
                     new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+
+    // -- Food Items -- //
+    public static final Item RED_SAPPHIRE_APPLE = registerItem("red_sapphire_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.RED_SAPPHIRE_APPLE)));
+    public static final Item BLUE_SAPPHIRE_APPLE = registerItem("blue_sapphire_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.BLUE_SAPPHIRE_APPLE)));
+    public static final Item GREEN_SAPPHIRE_APPLE = registerItem("green_sapphire_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.GREEN_SAPPHIRE_APPLE)));
+
+    public static final Item RED_GARNET_APPLE = registerItem("red_garnet_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.RED_GARNET_APPLE)));
+    public static final Item BLUE_GARNET_APPLE = registerItem("blue_garnet_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.BLUE_GARNET_APPLE)));
+    public static final Item PINK_GARNET_APPLE = registerItem("pink_garnet_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.PINK_GARNET_APPLE)));
+    public static final Item YELLOW_GARNET_APPLE = registerItem("yellow_garnet_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.YELLOW_GARNET_APPLE)));
+
+    public static final Item FUSION_APPLE = registerItem("fusion_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.FUSION_APPLE)));
+    public static final Item RUBY_APPLE = registerItem("ruby_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.RUBY_APPLE)));
 
     private static Item registerItem(String name, Item item)
     {
