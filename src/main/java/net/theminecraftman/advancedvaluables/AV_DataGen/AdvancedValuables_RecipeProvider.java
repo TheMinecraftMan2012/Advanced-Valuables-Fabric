@@ -5,11 +5,13 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
@@ -232,6 +234,115 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
         offerBlasting(exporter, FUSION_GEM_SMELTING_BLOCKS, RecipeCategory.MISC, AdvancedValuables_BlockClass.FUSION_BLOCK, 0.25f, 100, "fusion_gem");
         offerBlasting(exporter, RUBY_SMELTING_BLOCKS, RecipeCategory.MISC, AdvancedValuables_BlockClass.RUBY_BLOCK, 0.25f, 100, "ruby");
 
+        // -- Decor Blocks -- //
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_STAIRS,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_SLAB,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_BUTTON,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE_GATE,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_WALL,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_DOOR,
+                AdvancedValuables_BlockClass.RED_SAPPHIRE_TRAPDOOR,
+                AdvancedValuables_ItemClass.RED_SAPPHIRE, "red_sapphire");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_STAIRS,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_SLAB,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_BUTTON,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE_GATE,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_WALL,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_DOOR,
+                AdvancedValuables_BlockClass.BLUE_SAPPHIRE_TRAPDOOR,
+                AdvancedValuables_ItemClass.BLUE_SAPPHIRE, "blue_sapphire");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_STAIRS,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_SLAB,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_BUTTON,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE_GATE,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_WALL,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_DOOR,
+                AdvancedValuables_BlockClass.GREEN_SAPPHIRE_TRAPDOOR,
+                AdvancedValuables_ItemClass.GREEN_SAPPHIRE, "green_sapphire");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.RED_GARNET_STAIRS,
+                AdvancedValuables_BlockClass.RED_GARNET_SLAB,
+                AdvancedValuables_BlockClass.RED_GARNET_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.RED_GARNET_BUTTON,
+                AdvancedValuables_BlockClass.RED_GARNET_FENCE,
+                AdvancedValuables_BlockClass.RED_GARNET_FENCE_GATE,
+                AdvancedValuables_BlockClass.RED_GARNET_WALL,
+                AdvancedValuables_BlockClass.RED_GARNET_DOOR,
+                AdvancedValuables_BlockClass.RED_GARNET_TRAPDOOR,
+                AdvancedValuables_ItemClass.RED_GARNET, "red_garnet");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.BLUE_GARNET_STAIRS,
+                AdvancedValuables_BlockClass.BLUE_GARNET_SLAB,
+                AdvancedValuables_BlockClass.BLUE_GARNET_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.BLUE_GARNET_BUTTON,
+                AdvancedValuables_BlockClass.BLUE_GARNET_FENCE,
+                AdvancedValuables_BlockClass.BLUE_GARNET_FENCE_GATE,
+                AdvancedValuables_BlockClass.BLUE_GARNET_WALL,
+                AdvancedValuables_BlockClass.BLUE_GARNET_DOOR,
+                AdvancedValuables_BlockClass.BLUE_GARNET_TRAPDOOR,
+                AdvancedValuables_ItemClass.BLUE_GARNET, "blue_garnet");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.PINK_GARNET_STAIRS,
+                AdvancedValuables_BlockClass.PINK_GARNET_SLAB,
+                AdvancedValuables_BlockClass.PINK_GARNET_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.PINK_GARNET_BUTTON,
+                AdvancedValuables_BlockClass.PINK_GARNET_FENCE,
+                AdvancedValuables_BlockClass.PINK_GARNET_FENCE_GATE,
+                AdvancedValuables_BlockClass.PINK_GARNET_WALL,
+                AdvancedValuables_BlockClass.PINK_GARNET_DOOR,
+                AdvancedValuables_BlockClass.PINK_GARNET_TRAPDOOR,
+                AdvancedValuables_ItemClass.PINK_GARNET, "pink_garnet");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_STAIRS,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_SLAB,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_BUTTON,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE_GATE,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_WALL,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_DOOR,
+                AdvancedValuables_BlockClass.YELLOW_GARNET_TRAPDOOR,
+                AdvancedValuables_ItemClass.YELLOW_GARNET, "yellow_garnet");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.FUSION_STAIRS,
+                AdvancedValuables_BlockClass.FUSION_SLAB,
+                AdvancedValuables_BlockClass.FUSION_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.FUSION_BUTTON,
+                AdvancedValuables_BlockClass.FUSION_FENCE,
+                AdvancedValuables_BlockClass.FUSION_FENCE_GATE,
+                AdvancedValuables_BlockClass.FUSION_WALL,
+                AdvancedValuables_BlockClass.FUSION_DOOR,
+                AdvancedValuables_BlockClass.FUSION_TRAPDOOR,
+                AdvancedValuables_ItemClass.FUSION_GEM, "fusion_gem");
+
+        generateBuildingBlocks(exporter,
+                AdvancedValuables_BlockClass.RUBY_STAIRS,
+                AdvancedValuables_BlockClass.RUBY_SLAB,
+                AdvancedValuables_BlockClass.RUBY_PRESSURE_PLATE,
+                AdvancedValuables_BlockClass.RUBY_BUTTON,
+                AdvancedValuables_BlockClass.RUBY_FENCE,
+                AdvancedValuables_BlockClass.RUBY_FENCE_GATE,
+                AdvancedValuables_BlockClass.RUBY_WALL,
+                AdvancedValuables_BlockClass.RUBY_DOOR,
+                AdvancedValuables_BlockClass.RUBY_TRAPDOOR,
+                AdvancedValuables_ItemClass.RUBY, "ruby");
+
         // -- Add-ons -- //
         offerBlasting(exporter, IRON_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.IRON_BLOCK, 0.25f, 100, "iron_block");
         offerBlasting(exporter, GOLD_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.GOLD_BLOCK, 0.25f, 100, "gold_block");
@@ -242,7 +353,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
         offerSmelting(exporter, COPPER_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.COPPER_BLOCK, 0.25f, 100, "copper_block");
     }
 
-    private static void generateShapedBlockRecipe(Block result, Item ingredient, RecipeExporter exporter)
+    private void generateShapedBlockRecipe(Block result, Item ingredient, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result)
                 .pattern("aaa")
@@ -251,7 +362,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .input('a', ingredient)
                 .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).offerTo(exporter);
     }
-    private static void generateBlockToItemRecipe(Block input, Item output, String group, RecipeExporter exporter)
+    private void generateBlockToItemRecipe(Block input, Item output, String group, RecipeExporter exporter)
     {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output, 9)
                 .input(input)
@@ -260,7 +371,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    private static void generatePickaxeRecipe(Item input, Item output, String group, RecipeExporter exporter)
+    private void generatePickaxeRecipe(Item input, Item output, String group, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .pattern("aaa")
@@ -271,7 +382,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(input), conditionsFromItem(input)).group(group).offerTo(exporter);
     }
 
-    private static void generateAxeRecipe(Item input, Item output, String group, RecipeExporter exporter)
+    private void generateAxeRecipe(Item input, Item output, String group, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .pattern("aa ")
@@ -282,7 +393,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(input), conditionsFromItem(input)).group(group).offerTo(exporter);
     }
 
-    private static void generateShovelRecipe(Item input, Item output, String group, RecipeExporter exporter)
+    private void generateShovelRecipe(Item input, Item output, String group, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .pattern(" a ")
@@ -293,7 +404,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(input), conditionsFromItem(input)).group(group).offerTo(exporter);
     }
 
-    private static void generateHoeRecipe(Item input, Item output, String group, RecipeExporter exporter)
+    private void generateHoeRecipe(Item input, Item output, String group, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .pattern("aa ")
@@ -304,7 +415,7 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .criterion(hasItem(input), conditionsFromItem(input)).group(group).offerTo(exporter);
     }
 
-    private static void generateSwordRecipe(Item input, Item output, String group, RecipeExporter exporter)
+    private void generateSwordRecipe(Item input, Item output, String group, RecipeExporter exporter)
     {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
                 .pattern(" a ")
@@ -313,5 +424,83 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .input('a', input)
                 .input('b', Items.STICK)
                 .criterion(hasItem(input), conditionsFromItem(input)).group(group).offerTo(exporter);
+    }
+
+    private void generateBuildingBlocks(RecipeExporter exporter,
+                                        Block result_stair, Block result_slab,
+                                        Block result_pressure_plate, Block result_button,
+                                        Block result_fence, Block result_fence_gate,
+                                        Block result_wall, Block result_door,
+                                        Block result_trapdoor,
+                                        Item ingredient, String group)
+    {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_stair, 4)
+                .pattern("a  ")
+                .pattern("aa ")
+                .pattern("aaa")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group).offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_slab, 6)
+                .pattern("   ")
+                .pattern("aaa")
+                .pattern("   ")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group).offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_pressure_plate)
+                .pattern("aa ")
+                .pattern("   ")
+                .pattern("   ")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, result_button)
+                .input(ingredient)
+                .group(group)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_fence, 3)
+                .pattern("aba")
+                .pattern("aba")
+                .pattern("   ")
+                .input('a', ingredient)
+                .input('b', Items.STICK)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_fence_gate)
+                .pattern("aba")
+                .pattern("aba")
+                .pattern("   ")
+                .input('b', ingredient)
+                .input('a', Items.STICK)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_wall, 6)
+                .pattern("aaa")
+                .pattern("aaa")
+                .pattern("   ")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_door, 3)
+                .pattern("aa ")
+                .pattern("aa ")
+                .pattern("aa ")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, result_trapdoor, 2)
+                .pattern("aaa")
+                .pattern("aaa")
+                .pattern("   ")
+                .input('a', ingredient)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
+                .offerTo(exporter);
     }
 }

@@ -95,5 +95,38 @@ public class AdvancedValuables_BlockTagsProvider extends FabricTagProvider.Block
                 .add(AdvancedValuables_BlockClass.RAW_FUSION_BLOCK)
                 .add(AdvancedValuables_BlockClass.FUSION_ORE)
                 .add(AdvancedValuables_BlockClass.DEEPSLATE_FUSION_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE)
+                .add(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE)
+                .add(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE)
+                .add(AdvancedValuables_BlockClass.RED_GARNET_FENCE)
+                .add(AdvancedValuables_BlockClass.BLUE_GARNET_FENCE)
+                .add(AdvancedValuables_BlockClass.PINK_GARNET_FENCE)
+                .add(AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE)
+                .add(AdvancedValuables_BlockClass.FUSION_FENCE)
+                .add(AdvancedValuables_BlockClass.RUBY_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.RED_GARNET_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.BLUE_GARNET_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.PINK_GARNET_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.FUSION_FENCE_GATE)
+                .add(AdvancedValuables_BlockClass.RUBY_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(AdvancedValuables_BlockClass.RED_SAPPHIRE_WALL)
+                .add(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_WALL)
+                .add(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_WALL)
+                .add(AdvancedValuables_BlockClass.RED_GARNET_WALL)
+                .add(AdvancedValuables_BlockClass.BLUE_GARNET_WALL)
+                .add(AdvancedValuables_BlockClass.PINK_GARNET_WALL)
+                .add(AdvancedValuables_BlockClass.YELLOW_GARNET_WALL)
+                .add(AdvancedValuables_BlockClass.FUSION_WALL)
+                .add(AdvancedValuables_BlockClass.RUBY_WALL);
     }
 }

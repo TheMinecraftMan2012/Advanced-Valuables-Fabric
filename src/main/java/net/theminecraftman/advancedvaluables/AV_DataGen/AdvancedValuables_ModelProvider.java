@@ -2,6 +2,7 @@ package net.theminecraftman.advancedvaluables.AV_DataGen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -19,17 +20,111 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator)
     {
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.RED_SAPPHIRE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.RED_SAPPHIRE_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.RED_SAPPHIRE_STAIRS)
+                .slab(AdvancedValuables_BlockClass.RED_SAPPHIRE_SLAB)
+                .button(AdvancedValuables_BlockClass.RED_SAPPHIRE_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.RED_SAPPHIRE_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.RED_SAPPHIRE_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.RED_SAPPHIRE_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.RED_GARNET_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.BLUE_GARNET_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.PINK_GARNET_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.YELLOW_GARNET_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_STAIRS)
+                .slab(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_SLAB)
+                .button(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.FUSION_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.RUBY_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_STAIRS)
+                .slab(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_SLAB)
+                .button(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.RED_GARNET_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.RED_GARNET_STAIRS)
+                .slab(AdvancedValuables_BlockClass.RED_GARNET_SLAB)
+                .button(AdvancedValuables_BlockClass.RED_GARNET_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.RED_GARNET_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.RED_GARNET_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.RED_GARNET_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.RED_GARNET_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.BLUE_GARNET_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.BLUE_GARNET_STAIRS)
+                .slab(AdvancedValuables_BlockClass.BLUE_GARNET_SLAB)
+                .button(AdvancedValuables_BlockClass.BLUE_GARNET_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.BLUE_GARNET_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.BLUE_GARNET_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.BLUE_GARNET_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.BLUE_GARNET_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.PINK_GARNET_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.PINK_GARNET_STAIRS)
+                .slab(AdvancedValuables_BlockClass.PINK_GARNET_SLAB)
+                .button(AdvancedValuables_BlockClass.PINK_GARNET_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.PINK_GARNET_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.PINK_GARNET_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.PINK_GARNET_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.PINK_GARNET_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.YELLOW_GARNET_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.YELLOW_GARNET_STAIRS)
+                .slab(AdvancedValuables_BlockClass.YELLOW_GARNET_SLAB)
+                .button(AdvancedValuables_BlockClass.YELLOW_GARNET_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.YELLOW_GARNET_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.YELLOW_GARNET_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.YELLOW_GARNET_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.FUSION_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.FUSION_STAIRS)
+                .slab(AdvancedValuables_BlockClass.FUSION_SLAB)
+                .button(AdvancedValuables_BlockClass.FUSION_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.FUSION_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.FUSION_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.FUSION_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.FUSION_WALL);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(AdvancedValuables_BlockClass.RUBY_BLOCK)
+                .stairs(AdvancedValuables_BlockClass.RUBY_STAIRS)
+                .slab(AdvancedValuables_BlockClass.RUBY_SLAB)
+                .button(AdvancedValuables_BlockClass.RUBY_BUTTON)
+                .pressurePlate(AdvancedValuables_BlockClass.RUBY_PRESSURE_PLATE)
+                .fence(AdvancedValuables_BlockClass.RUBY_FENCE)
+                .fenceGate(AdvancedValuables_BlockClass.RUBY_FENCE_GATE)
+                .wall(AdvancedValuables_BlockClass.RUBY_WALL);
+
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.RED_SAPPHIRE_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_DOOR);
+
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.RED_GARNET_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.BLUE_GARNET_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.PINK_GARNET_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.YELLOW_GARNET_DOOR);
+
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.FUSION_DOOR);
+        blockStateModelGenerator.registerDoor(AdvancedValuables_BlockClass.RUBY_DOOR);
+
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.RED_SAPPHIRE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_TRAPDOOR);
+
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.RED_GARNET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.BLUE_GARNET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.PINK_GARNET_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.YELLOW_GARNET_TRAPDOOR);
+
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.FUSION_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(AdvancedValuables_BlockClass.RUBY_TRAPDOOR);
+
 
         blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.BLUE_RAW_SAPPHIRE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(AdvancedValuables_BlockClass.RED_RAW_SAPPHIRE_BLOCK);
