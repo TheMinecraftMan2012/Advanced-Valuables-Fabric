@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_garnet",
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "advancedvaluables:blue_garnet"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:blue_garnet_fence_gate"
+  }
+}

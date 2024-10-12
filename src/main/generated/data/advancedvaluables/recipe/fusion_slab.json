@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fusion_gem",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:fusion_gem"
+    }
+  },
+  "pattern": [
+    "   ",
+    "aaa",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "advancedvaluables:fusion_slab"
+  }
+}

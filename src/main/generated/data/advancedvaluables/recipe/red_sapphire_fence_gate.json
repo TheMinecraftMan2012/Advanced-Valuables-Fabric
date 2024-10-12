@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "red_sapphire",
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "advancedvaluables:red_sapphire"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:red_sapphire_fence_gate"
+  }
+}

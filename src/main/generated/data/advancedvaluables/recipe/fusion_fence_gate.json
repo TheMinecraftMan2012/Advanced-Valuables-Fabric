@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fusion_gem",
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "advancedvaluables:fusion_gem"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:fusion_fence_gate"
+  }
+}

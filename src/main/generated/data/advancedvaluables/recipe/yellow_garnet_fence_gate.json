@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "yellow_garnet",
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "advancedvaluables:yellow_garnet"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:yellow_garnet_fence_gate"
+  }
+}

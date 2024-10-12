@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "red_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:red_garnet"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "advancedvaluables:red_garnet_wall"
+  }
+}

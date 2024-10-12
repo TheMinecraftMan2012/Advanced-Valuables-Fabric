@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pink_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:pink_garnet"
+    }
+  },
+  "pattern": [
+    "   ",
+    "aaa",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "advancedvaluables:pink_garnet_slab"
+  }
+}

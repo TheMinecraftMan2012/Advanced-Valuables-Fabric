@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:blue_garnet"
+    }
+  },
+  "pattern": [
+    "   ",
+    "aaa",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "advancedvaluables:blue_garnet_slab"
+  }
+}

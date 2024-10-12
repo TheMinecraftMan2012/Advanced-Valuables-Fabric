@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_sapphire",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:blue_sapphire"
+    }
+  },
+  "pattern": [
+    "   ",
+    "aaa",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "id": "advancedvaluables:blue_sapphire_slab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "red_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:red_garnet"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "id": "advancedvaluables:red_garnet_fence"
+  }
+}

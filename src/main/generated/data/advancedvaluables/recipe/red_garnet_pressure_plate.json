@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "red_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:red_garnet"
+    }
+  },
+  "pattern": [
+    "aa ",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:red_garnet_pressure_plate"
+  }
+}

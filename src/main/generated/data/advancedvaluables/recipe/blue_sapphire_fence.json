@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blue_sapphire",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:blue_sapphire"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "aba",
+    "aba",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "id": "advancedvaluables:blue_sapphire_fence"
+  }
+}

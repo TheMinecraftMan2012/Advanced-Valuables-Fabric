@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pink_garnet",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:pink_garnet"
+    }
+  },
+  "pattern": [
+    "aa ",
+    "   ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "advancedvaluables:pink_garnet_pressure_plate"
+  }
+}

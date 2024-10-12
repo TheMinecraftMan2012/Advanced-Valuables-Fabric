@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ruby",
+  "key": {
+    "a": {
+      "item": "advancedvaluables:ruby"
+    }
+  },
+  "pattern": [
+    "aa ",
+    "aa ",
+    "aa "
+  ],
+  "result": {
+    "count": 3,
+    "id": "advancedvaluables:ruby_door"
+  }
+}
