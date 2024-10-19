@@ -1,13 +1,14 @@
-package net.theminecraftman.advancedvaluables.AV_Templates;
+package net.theminecraftman.advancedvaluables.AV_Registries;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
-import net.theminecraftman.advancedvaluables.AV_Templates.FoodComponents.AdvancedValuables_FoodProperties;
-import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ArmorMaterials;
-import net.theminecraftman.advancedvaluables.AV_ToolComponents.AdvancedValuables_ToolsMaterials;
+import net.theminecraftman.advancedvaluables.AV_Libraries.FoodComponents.AdvancedValuables_FoodProperties;
+import net.theminecraftman.advancedvaluables.AV_Libraries.Hammer.HammerItem;
+import net.theminecraftman.advancedvaluables.AV_Libraries.ToolComponents.AdvancedValuables_ArmorMaterials;
+import net.theminecraftman.advancedvaluables.AV_Libraries.ToolComponents.AdvancedValuables_ToolsMaterials;
 import net.theminecraftman.advancedvaluables.AdvancedValuables;
 
 public class AdvancedValuables_ItemClass
@@ -265,6 +266,22 @@ public class AdvancedValuables_ItemClass
     public static final Item FUSION_APPLE = registerItem("fusion_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.FUSION_APPLE)));
     public static final Item RUBY_APPLE = registerItem("ruby_apple", new Item(new Item.Settings().food(AdvancedValuables_FoodProperties.RUBY_APPLE)));
 
+    // -- Hammer Requirements -- //
+    public static final Item HAMMER_WIREFRAME = registerItem("hammer_wireframe", new Item(new Item.Settings()));
+
+    // -- Hammer -- //
+    public static final Item RED_SAPPHIRE_HAMMER = registerHammerItem("red_sapphire_hammer", AdvancedValuables_ToolsMaterials.RED_SAPPHIRE);
+    public static final Item BLUE_SAPPHIRE_HAMMER = registerHammerItem("blue_sapphire_hammer", AdvancedValuables_ToolsMaterials.BLUE_SAPPHIRE);
+    public static final Item GREEN_SAPPHIRE_HAMMER = registerHammerItem("green_sapphire_hammer", AdvancedValuables_ToolsMaterials.GREEN_SAPPHIRE);
+
+    public static final Item RED_GARNET_HAMMER = registerHammerItem("red_garnet_hammer", AdvancedValuables_ToolsMaterials.RED_GARNET);
+    public static final Item BLUE_GARNET_HAMMER = registerHammerItem("blue_garnet_hammer", AdvancedValuables_ToolsMaterials.BLUE_GARNET);
+    public static final Item PINK_GARNET_HAMMER = registerHammerItem("pink_garnet_hammer", AdvancedValuables_ToolsMaterials.PINK_GARNET);
+    public static final Item YELLOW_GARNET_HAMMER = registerHammerItem("yellow_garnet_hammer", AdvancedValuables_ToolsMaterials.YELLOW_GARNET);
+
+    public static final Item FUSION_HAMMER = registerHammerItem("fusion_hammer", AdvancedValuables_ToolsMaterials.FUSION_GEM);
+    public static final Item RUBY_HAMMER = registerHammerItem("ruby_hammer", AdvancedValuables_ToolsMaterials.RUBY);
+
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(AdvancedValuables.MOD_ID, name), item);
@@ -273,6 +290,8 @@ public class AdvancedValuables_ItemClass
     public static void registerModItems()
     {
         AdvancedValuables.LOGGER.info("Registering Items for " + AdvancedValuables.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> entries.add(AdvancedValuables_ItemClass.HAMMER_WIREFRAME));
     }
 
     // -- Tool Register Method -- //
@@ -324,5 +343,10 @@ public class AdvancedValuables_ItemClass
     private static Item registerFireResistantSwordItem(String name, AdvancedValuables_ToolsMaterials toolsMaterials)
     {
         return registerItem(name, new SwordItem(toolsMaterials, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(toolsMaterials, 3, -2.4f)).fireproof()));
+    }
+
+    private static Item registerHammerItem(String name, AdvancedValuables_ToolsMaterials toolsMaterials)
+    {
+        return registerItem(name, new HammerItem(toolsMaterials, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(toolsMaterials, 7, -3.5f))));
     }
 }

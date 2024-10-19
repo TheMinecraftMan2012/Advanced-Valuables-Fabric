@@ -5,17 +5,15 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -351,6 +349,25 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
         offerSmelting(exporter, IRON_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.IRON_BLOCK, 0.25f, 100, "iron_block");
         offerSmelting(exporter, GOLD_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.GOLD_BLOCK, 0.25f, 100, "gold_block");
         offerSmelting(exporter, COPPER_SMELTING_BLOCK, RecipeCategory.MISC, Blocks.COPPER_BLOCK, 0.25f, 100, "copper_block");
+
+        // -- Hammer Wireframe -- //
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AdvancedValuables_ItemClass.HAMMER_WIREFRAME)
+                .pattern("aaa")
+                .pattern("aaa")
+                .pattern(" a ")
+                .input('a', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
+        
+        // -- Hammer Crafting -- //
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.RED_SAPPHIRE, AdvancedValuables_ItemClass.RED_SAPPHIRE_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.BLUE_SAPPHIRE, AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.GREEN_SAPPHIRE, AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.RED_GARNET, AdvancedValuables_ItemClass.RED_GARNET_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.BLUE_GARNET, AdvancedValuables_ItemClass.BLUE_GARNET_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.PINK_GARNET, AdvancedValuables_ItemClass.PINK_GARNET_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.YELLOW_GARNET, AdvancedValuables_ItemClass.YELLOW_GARNET_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.FUSION_GEM, AdvancedValuables_ItemClass.FUSION_HAMMER);
+        generateHammerRecipe(exporter, AdvancedValuables_ItemClass.RUBY, AdvancedValuables_ItemClass.RUBY_HAMMER);
     }
 
     private void generateShapedBlockRecipe(Block result, Item ingredient, RecipeExporter exporter)
@@ -502,5 +519,12 @@ public class AdvancedValuables_RecipeProvider extends FabricRecipeProvider
                 .input('a', ingredient)
                 .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).group(group)
                 .offerTo(exporter);
+    }
+
+    private void generateHammerRecipe(RecipeExporter exporter, Item ingredient, Item result)
+    {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, result)
+                .input(ingredient).input(AdvancedValuables_ItemClass.HAMMER_WIREFRAME)
+                .criterion(hasItem(ingredient), conditionsFromItem(ingredient)).offerTo(exporter);
     }
 }

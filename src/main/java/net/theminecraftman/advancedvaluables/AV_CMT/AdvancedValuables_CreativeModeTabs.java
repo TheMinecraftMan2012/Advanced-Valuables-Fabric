@@ -7,8 +7,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
 import net.theminecraftman.advancedvaluables.AdvancedValuables;
 
 public class AdvancedValuables_CreativeModeTabs
@@ -189,6 +189,16 @@ public class AdvancedValuables_CreativeModeTabs
                 entries.add(AdvancedValuables_ItemClass.RUBY_CHESTPLATE);
                 entries.add(AdvancedValuables_ItemClass.RUBY_LEGGINGS);
                 entries.add(AdvancedValuables_ItemClass.RUBY_BOOTS);
+
+                entries.add(AdvancedValuables_ItemClass.RED_SAPPHIRE_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.RED_GARNET_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.BLUE_GARNET_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.PINK_GARNET_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.YELLOW_GARNET_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.FUSION_HAMMER);
+                entries.add(AdvancedValuables_ItemClass.RUBY_HAMMER);
             })).build());
 
     public static final ItemGroup AV_FOODS_TAB = registerCreativeTabs("foods", FabricItemGroup.builder()

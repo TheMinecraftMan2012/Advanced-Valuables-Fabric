@@ -13,7 +13,7 @@
 		"issues": "https://forms.gle/vmNizvaCav4BfHdB6"
 	},
 	"license": "MIT",
-	"icon": "assets/advancedvaluables/icon.png",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

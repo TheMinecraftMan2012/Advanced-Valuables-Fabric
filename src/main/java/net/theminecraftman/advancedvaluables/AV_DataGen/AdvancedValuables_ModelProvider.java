@@ -2,13 +2,11 @@ package net.theminecraftman.advancedvaluables.AV_DataGen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.item.Item;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
 
 public class AdvancedValuables_ModelProvider extends FabricModelProvider
 {
@@ -299,5 +297,18 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
 
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_APPLE, Models.GENERATED);
         itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_APPLE, Models.GENERATED);
+
+        // -- Hammers -- //
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(AdvancedValuables_ItemClass.HAMMER_WIREFRAME, Models.GENERATED);
     }
 }

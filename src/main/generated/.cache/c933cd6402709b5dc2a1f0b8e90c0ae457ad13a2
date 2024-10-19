@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-11T01:34:50.5637052	Advanced Valuables/Block Loot Tables
+// 1.21.1	2024-10-16T06:27:58.3447216	Advanced Valuables/Block Loot Tables
 8d84537a70b5ea51666a2e4e40d00e13fd020cc7 data\advancedvaluables\loot_table\blocks\green_sapphire_button.json
 4f2afc2337d0bc52616d15168c6fa943a4c940e3 data\advancedvaluables\loot_table\blocks\ruby_button.json
 9aa69ed01872e170953bd8a2a41fc2fe87803bd1 data\advancedvaluables\loot_table\blocks\blue_sapphire_stairs.json
@@ -81,8 +81,8 @@ a367934fa182f89b99b708452b64e3822d4444fc data\advancedvaluables\loot_table\block
 2a322af2d5592b92d9632fda8af323d359339016 data\advancedvaluables\loot_table\blocks\fusion_fence.json
 a9fa81c6d52c3499599c631d00f5f1e24324d377 data\advancedvaluables\loot_table\blocks\blue_sapphire_ore.json
 5e777535a7d02d5b4d23a2cdaa0e0786c9be3c34 data\advancedvaluables\loot_table\blocks\fusion_deepslate_ore.json
-fdb7eae2295b296ec7ba1f641171558e7c83196f data\advancedvaluables\loot_table\blocks\pink_raw_garnet_block.json
 4072b2fca9b097745bd91111527f7e5b658b808e data\advancedvaluables\loot_table\blocks\pink_garnet_slab.json
+fdb7eae2295b296ec7ba1f641171558e7c83196f data\advancedvaluables\loot_table\blocks\pink_raw_garnet_block.json
 5eab6070fc48f70763d05b43e99431b05c080aec data\advancedvaluables\loot_table\blocks\red_garnet_block.json
 90b3842947147472eb1319dc348d15e8fd8e8cf6 data\advancedvaluables\loot_table\blocks\pink_garnet_button.json
 9e99e4073d75d289fc5685c83d21cf8c73c68946 data\advancedvaluables\loot_table\blocks\pink_garnet_fence.json

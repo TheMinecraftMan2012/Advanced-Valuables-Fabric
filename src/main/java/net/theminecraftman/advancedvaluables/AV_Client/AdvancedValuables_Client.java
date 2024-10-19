@@ -3,7 +3,7 @@ package net.theminecraftman.advancedvaluables.AV_Client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
 
 public class AdvancedValuables_Client implements ClientModInitializer
 {

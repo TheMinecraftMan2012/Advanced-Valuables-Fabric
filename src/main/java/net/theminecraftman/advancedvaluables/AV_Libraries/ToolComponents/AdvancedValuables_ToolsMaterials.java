@@ -1,11 +1,11 @@
-package net.theminecraftman.advancedvaluables.AV_ToolComponents;
+package net.theminecraftman.advancedvaluables.AV_Libraries.ToolComponents;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
 import net.theminecraftman.advancedvaluables.util.AdvancedValuables_Tags;
 
 import java.util.function.Supplier;

@@ -2,9 +2,11 @@ package net.theminecraftman.advancedvaluables;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.theminecraftman.advancedvaluables.AV_CMT.AdvancedValuables_CreativeModeTabs;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_BlockClass;
-import net.theminecraftman.advancedvaluables.AV_Templates.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AV_Libraries.Events.HammerUsageEvents;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
 import net.theminecraftman.advancedvaluables.AV_WorldGen.gen.AdvancedValuables_WorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,5 +25,7 @@ public class AdvancedValuables implements ModInitializer
 
 		AdvancedValuables_ItemClass.registerModItems();
 		AdvancedValuables_BlockClass.registerModBlocks();
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvents());
 	}
 }
