@@ -223,19 +223,19 @@ public class AdvancedValuables_ItemClass
 
     public static final Item FUSION_HELMET = registerItem("fusion_helmet",
             new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.HELMET,
-                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50)).fireproof()));
 
     public static final Item FUSION_CHESTPLATE = registerItem("fusion_chestplate",
             new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.CHESTPLATE,
-                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50))));
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50)).fireproof()));
 
     public static final Item FUSION_LEGGINGS = registerItem("fusion_leggings",
             new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.LEGGINGS,
-                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50))));
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50)).fireproof()));
 
     public static final Item FUSION_BOOTS = registerItem("fusion_boots",
             new ArmorItem(AdvancedValuables_ArmorMaterials.FUSION_GEM, ArmorItem.Type.BOOTS,
-                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50))));
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50)).fireproof()));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
             new ArmorItem(AdvancedValuables_ArmorMaterials.RUBY, ArmorItem.Type.HELMET,
@@ -279,7 +279,7 @@ public class AdvancedValuables_ItemClass
     public static final Item PINK_GARNET_HAMMER = registerHammerItem("pink_garnet_hammer", AdvancedValuables_ToolsMaterials.PINK_GARNET);
     public static final Item YELLOW_GARNET_HAMMER = registerHammerItem("yellow_garnet_hammer", AdvancedValuables_ToolsMaterials.YELLOW_GARNET);
 
-    public static final Item FUSION_HAMMER = registerHammerItem("fusion_hammer", AdvancedValuables_ToolsMaterials.FUSION_GEM);
+    public static final Item FUSION_HAMMER = registerFireResistantHammerItem("fusion_hammer", AdvancedValuables_ToolsMaterials.FUSION_GEM);
     public static final Item RUBY_HAMMER = registerHammerItem("ruby_hammer", AdvancedValuables_ToolsMaterials.RUBY);
 
     private static Item registerItem(String name, Item item)
@@ -348,5 +348,10 @@ public class AdvancedValuables_ItemClass
     private static Item registerHammerItem(String name, AdvancedValuables_ToolsMaterials toolsMaterials)
     {
         return registerItem(name, new HammerItem(toolsMaterials, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(toolsMaterials, 7, -3.5f))));
+    }
+
+    private static Item registerFireResistantHammerItem(String name, AdvancedValuables_ToolsMaterials toolsMaterials)
+    {
+        return registerItem(name, new HammerItem(toolsMaterials, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(toolsMaterials, 7, -3.5f)).fireproof()));
     }
 }

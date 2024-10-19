@@ -60,12 +60,7 @@ public class AdvancedValuables_CreativeModeTabs
                 entries.add(AdvancedValuables_BlockClass.YELLOW_RAW_GARNET_BLOCK);
                 entries.add(AdvancedValuables_BlockClass.RAW_FUSION_BLOCK);
                 entries.add(AdvancedValuables_BlockClass.RAW_RUBY_BLOCK);
-            })).build());
 
-    public static final ItemGroup AV_VALUABLES_ORE = registerCreativeTabs("valuable_ores", FabricItemGroup.builder()
-            .displayName(Text.translatable("creativetab.advancedvaluables.valuable_ores"))
-            .icon(() -> new ItemStack(AdvancedValuables_BlockClass.FUSION_BLOCK))
-            .entries(((displayContext, entries) -> {
                 entries.add(AdvancedValuables_BlockClass.BLUE_SAPPHIRE_ORE);
                 entries.add(AdvancedValuables_BlockClass.RED_SAPPHIRE_ORE);
                 entries.add(AdvancedValuables_BlockClass.GREEN_SAPPHIRE_ORE);
@@ -86,6 +81,7 @@ public class AdvancedValuables_CreativeModeTabs
                 entries.add(AdvancedValuables_BlockClass.DEEPSLATE_FUSION_ORE);
                 entries.add(AdvancedValuables_BlockClass.DEEPSLATE_RUBY_ORE);
             })).build());
+
 
     public static final ItemGroup AV_TOOLS_ARMOR = registerCreativeTabs("tools_armor", FabricItemGroup.builder()
             .displayName(Text.translatable("creativetab.advancedvaluables.tools_armor"))
@@ -220,7 +216,7 @@ public class AdvancedValuables_CreativeModeTabs
             .build());
 
     public static final ItemGroup AV_DECOR_TAB = registerCreativeTabs("decor", FabricItemGroup.builder()
-            .icon(() -> new ItemStack(AdvancedValuables_BlockClass.RED_SAPPHIRE_DOOR))
+            .icon(() -> new ItemStack(AdvancedValuables_BlockClass.FUSION_DOOR))
             .displayName(Text.translatable("creativetab.advancedvaluables.decor"))
             .entries((displayContext, entries) -> {
                 entries.add(AdvancedValuables_BlockClass.RED_SAPPHIRE_STAIRS);
