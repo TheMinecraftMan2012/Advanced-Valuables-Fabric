@@ -5,8 +5,13 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.Item;
+import net.minecraft.item.equipment.EquipmentModel;
+import net.minecraft.util.Identifier;
 import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
 import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.AdvancedValuables;
 
 public class AdvancedValuables_ModelProvider extends FabricModelProvider
 {
@@ -240,50 +245,50 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_SWORD, Models.HANDHELD);
 
         // -- Armors -- //
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_SAPPHIRE_HELMET, "red_sapphire", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_SAPPHIRE_CHESTPLATE, "red_sapphire", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_SAPPHIRE_LEGGINGS, "red_sapphire", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_SAPPHIRE_BOOTS, "red_sapphire", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_SAPPHIRE_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_SAPPHIRE_HELMET, "blue_sapphire", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_SAPPHIRE_CHESTPLATE, "blue_sapphire", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_SAPPHIRE_LEGGINGS, "blue_sapphire", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_SAPPHIRE_BOOTS, "blue_sapphire", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.GREEN_SAPPHIRE_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.GREEN_SAPPHIRE_HELMET, "green_sapphire", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.GREEN_SAPPHIRE_CHESTPLATE, "green_sapphire", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.GREEN_SAPPHIRE_LEGGINGS, "green_sapphire", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.GREEN_SAPPHIRE_BOOTS, "green_sapphire", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RED_GARNET_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_GARNET_HELMET, "red_garnet", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_GARNET_CHESTPLATE, "red_garnet", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_GARNET_LEGGINGS, "red_garnet", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RED_GARNET_BOOTS, "red_garnet", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.BLUE_GARNET_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_GARNET_HELMET, "blue_garnet", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_GARNET_CHESTPLATE, "blue_garnet", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_GARNET_LEGGINGS, "blue_garnet", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.BLUE_GARNET_BOOTS, "blue_garnet", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.PINK_GARNET_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.PINK_GARNET_HELMET, "pink_garnet", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.PINK_GARNET_CHESTPLATE, "pink_garnet", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.PINK_GARNET_LEGGINGS, "pink_garnet", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.PINK_GARNET_BOOTS, "pink_garnet", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.YELLOW_GARNET_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.YELLOW_GARNET_HELMET, "yellow_garnet", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.YELLOW_GARNET_CHESTPLATE, "yellow_garnet", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.YELLOW_GARNET_LEGGINGS, "yellow_garnet", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.YELLOW_GARNET_BOOTS, "yellow_garnet", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.FUSION_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.FUSION_HELMET, "fusion_gem", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.FUSION_CHESTPLATE, "fusion_gem", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.FUSION_LEGGINGS, "fusion_gem", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.FUSION_BOOTS, "fusion_gem", EquipmentSlot.FEET);
 
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_HELMET, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_BOOTS, Models.GENERATED);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RUBY_HELMET, "ruby", EquipmentSlot.HEAD);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RUBY_CHESTPLATE, "ruby", EquipmentSlot.CHEST);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RUBY_LEGGINGS, "ruby", EquipmentSlot.LEGS);
+        generateArmorItem(itemModelGenerator, AdvancedValuables_ItemClass.RUBY_BOOTS, "ruby", EquipmentSlot.FEET);
 
         // -- Foods -- //
         itemModelGenerator.register(AdvancedValuables_ItemClass.RED_SAPPHIRE_APPLE, Models.GENERATED);
@@ -310,5 +315,11 @@ public class AdvancedValuables_ModelProvider extends FabricModelProvider
         itemModelGenerator.register(AdvancedValuables_ItemClass.RUBY_HAMMER, Models.HANDHELD);
 
         itemModelGenerator.register(AdvancedValuables_ItemClass.HAMMER_WIREFRAME, Models.GENERATED);
+    }
+
+    public static void generateArmorItem(ItemModelGenerator itemModelGenerator, Item item, String modelId, EquipmentSlot slot)
+    {
+        itemModelGenerator.registerArmor(item, Identifier.of(AdvancedValuables.MOD_ID, modelId),
+                EquipmentModel.builder().addHumanoidLayers(Identifier.of(AdvancedValuables.MOD_ID, modelId)).build(), slot);
     }
 }

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "pink_garnet",
-  "ingredient": {
-    "item": "advancedvaluables:pink_raw_garnet"
-  },
+  "ingredient": "advancedvaluables:pink_raw_garnet",
   "result": {
     "id": "advancedvaluables:pink_garnet"
   }

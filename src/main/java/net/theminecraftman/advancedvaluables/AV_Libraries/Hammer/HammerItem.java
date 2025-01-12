@@ -14,9 +14,9 @@ import java.util.List;
 
 public class HammerItem extends MiningToolItem
 {
-    public HammerItem(ToolMaterial material, Settings settings)
+    public HammerItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings)
     {
-        super(material, BlockTags.PICKAXE_MINEABLE, settings);
+        super(material, BlockTags.PICKAXE_MINEABLE, attackDamage, attackSpeed, settings);
     }
 
     // -- Help taken from Kaupenjoe. See https://youtu.be/-EuJTKoLzlM?si=g7d00YITctT4bK00 -- //

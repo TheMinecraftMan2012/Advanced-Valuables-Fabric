@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.2,
   "group": "blue_sapphire",
-  "ingredient": {
-    "item": "advancedvaluables:blue_sapphire_deepslate_ore"
-  },
+  "ingredient": "advancedvaluables:blue_sapphire_deepslate_ore",
   "result": {
     "id": "advancedvaluables:blue_sapphire"
   }

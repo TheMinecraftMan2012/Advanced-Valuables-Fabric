@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_BlockClass;
+import net.theminecraftman.advancedvaluables.AV_Registries.AdvancedValuables_ItemClass;
+import net.theminecraftman.advancedvaluables.util.AdvancedValuables_Tags;
 
 import java.util.concurrent.CompletableFuture;
 

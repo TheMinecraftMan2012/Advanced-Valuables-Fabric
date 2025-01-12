@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "green_sapphire",
-  "ingredient": {
-    "item": "advancedvaluables:green_raw_sapphire"
-  },
+  "ingredient": "advancedvaluables:green_raw_sapphire",
   "result": {
     "id": "advancedvaluables:green_sapphire"
   }

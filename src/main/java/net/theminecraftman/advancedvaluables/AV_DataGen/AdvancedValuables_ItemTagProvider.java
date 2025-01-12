@@ -37,5 +37,17 @@ public class AdvancedValuables_ItemTagProvider extends FabricTagProvider.ItemTag
                     AdvancedValuables_ItemClass.RAW_FUSION_GEM,
                     AdvancedValuables_ItemClass.RAW_RUBY
                 );
+
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.RED_SAPPHIRE_REPAIR).add(AdvancedValuables_ItemClass.RED_SAPPHIRE);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.BLUE_SAPPHIRE_REPAIR).add(AdvancedValuables_ItemClass.BLUE_SAPPHIRE);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.GREEN_SAPPHIRE_REPAIR).add(AdvancedValuables_ItemClass.GREEN_SAPPHIRE);
+
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.RED_GARNET_REPAIR).add(AdvancedValuables_ItemClass.RED_GARNET);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.BLUE_GARNET_REPAIR).add(AdvancedValuables_ItemClass.BLUE_GARNET);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.PINK_GARNET_REPAIR).add(AdvancedValuables_ItemClass.PINK_GARNET);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.YELLOW_GARNET_REPAIR).add(AdvancedValuables_ItemClass.YELLOW_GARNET);
+
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.FUSION_REPAIR).add(AdvancedValuables_ItemClass.FUSION_GEM);
+        getOrCreateTagBuilder(AdvancedValuables_Tags.Items.RUBY_REPAIR).add(AdvancedValuables_ItemClass.RUBY);
     }
 }

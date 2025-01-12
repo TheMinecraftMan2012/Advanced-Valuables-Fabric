@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "red_garnet",
-  "ingredient": {
-    "item": "advancedvaluables:red_garnet_ore"
-  },
+  "ingredient": "advancedvaluables:red_garnet_ore",
   "result": {
     "id": "advancedvaluables:red_garnet"
   }

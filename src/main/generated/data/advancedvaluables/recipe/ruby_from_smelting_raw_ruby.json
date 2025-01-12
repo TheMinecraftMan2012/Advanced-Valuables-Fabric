@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "ruby",
-  "ingredient": {
-    "item": "advancedvaluables:raw_ruby"
-  },
+  "ingredient": "advancedvaluables:raw_ruby",
   "result": {
     "id": "advancedvaluables:ruby"
   }

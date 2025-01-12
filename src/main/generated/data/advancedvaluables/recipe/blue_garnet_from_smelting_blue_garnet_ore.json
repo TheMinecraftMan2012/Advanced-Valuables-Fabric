@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "blue_garnet",
-  "ingredient": {
-    "item": "advancedvaluables:blue_garnet_ore"
-  },
+  "ingredient": "advancedvaluables:blue_garnet_ore",
   "result": {
     "id": "advancedvaluables:blue_garnet"
   }

@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.2,
   "group": "red_sapphire",
-  "ingredient": {
-    "item": "advancedvaluables:red_raw_sapphire"
-  },
+  "ingredient": "advancedvaluables:red_raw_sapphire",
   "result": {
     "id": "advancedvaluables:red_sapphire"
   }
